@@ -5,8 +5,9 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.TextView;
+import android.app.Activity;
 
-public class SegundoAct extends AppCompatActivity {
+public class SegundoAct extends Activity {
     private TextView tv2;
 
     @Override
@@ -16,6 +17,9 @@ public class SegundoAct extends AppCompatActivity {
         tv2 = (TextView)findViewById(R.id.tv2);
         String dato = getIntent().getStringExtra("dato");
         tv2.setText("Hola " + dato);
+        
+
+
 
     }
 
